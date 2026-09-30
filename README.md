@@ -6,7 +6,7 @@
 - **Pages (27):** Home, Decoder, 999920 Meaning, Lucky Numbers, Zodiac Love, Love Calendar, Wedding Dates, Love Card Maker, 9999 Gold, Gifts, Videos, Blog (+4 posts), Get Free Quotes, Contests, Support/Donate, Careers, Advertise/Sponsor, Contact, About, Privacy, Terms, Disclaimer & Trademark/Copyright Notice, and 404.
 
 ## Edit & rebuild
-Page bodies live in `src/*.html` and shared blocks in `src/partials/`. The layout and header are in `build.py`. The shared footer, newsletter and cookie banner are generated into `assets/js/layout.js`.
+First run `python3 extract_src.py`. It regenerates the editable `src/*.html` page bodies from the live pages, and the round trip is byte-exact. Page bodies then live in `src/*.html` and shared blocks in `src/partials/`. The layout and header are in `build.py`. The shared footer, newsletter and cookie banner are generated into `assets/js/layout.js`.
 ```bash
 python3 build.py      # regenerates the root *.html files, assets/js/layout.js + sitemap.xml
 ```
